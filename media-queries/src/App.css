@@ -1,0 +1,205 @@
+.body {
+  height: 100vh;
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-size: cover;
+
+}
+
+.header {
+  height: 80px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.logo {
+  color: gold;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* .nav-bar {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  margin: 10px;
+  
+}
+
+
+
+.dropdown-menu {
+  height: 0;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
+  background-color: rgb(33,37,41);
+}
+
+
+
+.dropdown-button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+
+.main-body {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#greeting {
+  color: white;
+  font-size: 33px;
+  font-style: italic;
+
+}
+
+#introduction {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#menu-button {
+  height: 45px;
+  width: 80px;
+  background-color: rgb(254,209,54);
+  color: white;
+  border-radius: 2px;
+  border: 0;
+}
+
+i {
+  margin: 2px;
+}
+
+#information-button {
+  height: 35px;
+  width: 120px;
+  background-color: rgb(254,209,54);
+  color: white;
+  border-radius: 2px;
+  border: 0;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#line-break {
+  display: none;
+}
+
+#line-break-two {
+  display: none;
+}
+
+.show-animation {
+  animation-name: hide;
+  animation-duration: 0.7;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hide-animation {
+  animation-name: show;
+  animation-duration: 0.7;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes show {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 80px;
+    background-color: rgb(33,37,41);
+  
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  #line-break-two {
+    display: block;
+  }
+  
+
+  #greeting {
+    color: white;
+    font-size: 23px;
+    font-style: italic;
+  
+  }
+  
+  #introduction {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .header {
+    height: 80px;
+    background-color: rgb(33,37,41);
+  
+  }
+
+  #nav-bar {
+      display: none;
+      
+    }
+
+    #line-break {
+      display: block;
+    }
+}
+
+@media (min-width: 1000px ){
+  #menu-hamburger-icon {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+  
+}
